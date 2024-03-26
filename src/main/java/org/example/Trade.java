@@ -15,6 +15,6 @@ public class Trade {
 
     @Override
     public String toString() {
-        return side + "\t" + size + "\t" + price + "\t" + productId;
+        return side + " " + size + " " + price + " " + productId;
     }
 }

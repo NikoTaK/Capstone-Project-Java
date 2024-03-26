@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c40d9cf5-4f5a-447d-ab13-2215e29d6326" name="Changes" comment="">
+    <list default="true" id="c40d9cf5-4f5a-447d-ab13-2215e29d6326" name="Changes" comment="ilya">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/orders" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/orders" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Trade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Trade.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +26,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "IlyaBulya"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="292c3c47-ee1b-48f6-9065-408f1b21f3b0" />
+        <option name="url" value="https://github.com/NikoTaK/matching-engine.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -34,17 +49,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/macbookpro/IdeaProjects/ProjectPilot/src/main/java/org/example/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main (1).executor": "Run",
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "/Users/macbookpro/IdeaProjects/ProjectPilot/src/main/java/org/example/Main.java"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="ProjectPilot" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="ProjectPilot" />
@@ -61,6 +84,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -80,6 +104,27 @@
       <option name="presentableId" value="Default" />
       <updated>1710957195039</updated>
     </task>
+    <task id="LOCAL-00001" summary="ilya">
+      <option name="closed" value="true" />
+      <created>1711490132931</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711490132931</updated>
+    </task>
+    <task id="LOCAL-00002" summary="ilya">
+      <option name="closed" value="true" />
+      <created>1711490256635</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1711490256635</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ilya" />
+    <option name="LAST_COMMIT_MESSAGE" value="ilya" />
   </component>
 </project>
