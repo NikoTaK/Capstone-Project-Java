@@ -24,4 +24,9 @@ public class Message {
     public boolean isCancel() {
         return action.equals("CANCEL");
     }
+
+    @Override
+    public String toString() {
+        return originator + " " + messageId + " " + action + " " + size + " " + price + " " + productId;
+    }
 }

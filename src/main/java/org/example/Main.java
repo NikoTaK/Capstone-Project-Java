@@ -6,24 +6,28 @@ import java.util.*;
 
 public class Main {
 
-    public static void processVenueMessage(Message message, Position position, List<Message> orderMessages) {
+    public static boolean processVenueMessage(Message message, Position position, List<Message> orderMessages) {
         if (message.action.equals("BUY")) {
-            for (Message order : orderMessages) {
+            for (Message order : new ArrayList<>(orderMessages)) {
                 if (order.action.equals("SELL") && order.productId.equals(message.productId)) {
                     if (position.canAccept(order.size, order.action)) {
                         System.out.println(new Trade(order.action, order.size, order.price, order.productId));
                         position.updatePosition(order.size, order.action);
                         orderMessages.remove(order);
-                        return;
+                        return true;
                     }
                 }
             }
+        } else if (message.action.equals("SELL")) {
+            System.out.println(new Trade(message.action, message.size, message.price, message.productId));
+            return true;
         }
+        return false;
     }
     public static void main(String[] args) {
         int maxPosition = 0;
         try {
-            File file = new File("/Users/macbookpro/IdeaProjects/ProjectPilot/src/main/java/org/example/orders");
+            File file = new File("C:\\Users\\ilyad\\IdeaProjects\\matching-engine1\\src\\main\\java\\org\\example\\orders");
             Scanner scanner = new Scanner(file);
             Position position = new Position(maxPosition);
             List<Message> orderMessages = new ArrayList<>(6);
