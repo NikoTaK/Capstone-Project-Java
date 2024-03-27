@@ -6,9 +6,28 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-
 public class Main {
-    private static final int MAX_POSITION = 10000000;
+    private static final int MAX_POSITION = 10000;
+
+    public static void processVenueMessage(Message message, Position position, List<Message> orderMessages) {
+        if (message.action.equals("SELL")) {
+            for (Message order : new ArrayList<>(orderMessages)) {
+                if (order.action.equals("BUY") && order.productId.equals(message.productId) && order.price >= message.price) {
+                    int tradeSize = Math.min(order.size, message.size);
+                    System.out.println(new Trade(order.action, tradeSize, message.price, order.productId));
+                    position.updatePosition(tradeSize, order.action);
+                    order.size -= tradeSize;
+                    message.size -= tradeSize;
+                    if (order.size == 0) {
+                        orderMessages.remove(order);
+                    }
+                    if (message.size == 0) {
+                        return; // Exit the loop after executing all trades for this venue message
+                    }
+                }
+            }
+        }
+    }
 
     public static void main(String[] args) {
         try {
@@ -38,30 +57,12 @@ public class Main {
                 }
             }
 
-            for (Message order : orderMessages) {
-                if (order.action.equals("BUY")) {
-                    System.out.println(new Trade(order.action, order.size, order.price, order.productId));
-                }
-            }
-
             scanner.close();
         } catch (FileNotFoundException e) {
             System.err.println("File not found: orders.txt");
         }
     }
-
-    public static void processVenueMessage(Message message, Position position, List<Message> orderMessages) {
-        if (message.action.equals("SELL")) {
-            for (Message order : new ArrayList<>(orderMessages)) {
-                if (order.action.equals("BUY") && order.productId.equals(message.productId) && order.price >= message.price) {
-                    if (position.canAccept(order.size, order.action)) {
-                        System.out.println(new Trade(order.action, order.size, order.price, order.productId));
-                        position.updatePosition(order.size, order.action);
-                        orderMessages.remove(order);
-                        return; // Exit the loop after executing a trade
-                    }
-                }
-            }
-        }
-    }
 }
+
+
+

@@ -16,12 +16,4 @@ public class Message {
         this.price = price;
         this.productId = productId;
     }
-
-    public boolean isOrder() {
-        return action.equals("BUY") || action.equals("SELL");
-    }
-
-    public boolean isCancel() {
-        return action.equals("CANCEL");
-    }
 }
