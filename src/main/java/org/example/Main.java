@@ -7,12 +7,12 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-    private static final int MAX_POSITION = 10000;
+    private static final int MAX_POSITION = 5000;
 
     public static void processVenueMessage(Message message, Position position, List<Message> orderMessages) {
         if (message.action.equals("SELL")) {
             for (Message order : new ArrayList<>(orderMessages)) {
-                if (order.action.equals("BUY") && order.productId.equals(message.productId) && order.price >= message.price) {
+                if (order.action.equals("BUY") && order.productId.equals(message.productId) && order.price >= message.price && position.currentPosition - message.size >= -position.maxPosition) {
                     int tradeSize = Math.min(order.size, message.size);
                     System.out.println(new Trade(order.action, tradeSize, message.price, order.productId));
                     position.updatePosition(tradeSize, order.action);
@@ -22,7 +22,7 @@ public class Main {
                         orderMessages.remove(order);
                     }
                     if (message.size == 0) {
-                        return; // Exit the loop after executing all trades for this venue message
+                        return;
                     }
                 }
             }
@@ -31,7 +31,7 @@ public class Main {
 
     public static void main(String[] args) {
         try {
-            File file = new File("C:\\Users\\ilyad\\IdeaProjects\\matching-engine1\\src\\main\\java\\org\\example\\orders");
+            File file = new File("/Users/macbookpro/IdeaProjects/ProjectPilot/src/main/java/org/example/orders");
             Scanner scanner = new Scanner(file);
             Position position = new Position(MAX_POSITION);
             List<Message> orderMessages = new ArrayList<>();
@@ -44,7 +44,7 @@ public class Main {
 
                 String[] parts = line.split("\\s+");
                 if (parts[0].equals("DF")) {
-                    if (parts[2].equals("CANCEL")) {
+                    if (parts[2].equals("cancel")) {
                         String messageId = parts[1];
                         orderMessages.removeIf(msg -> msg.messageId.equals(messageId));
                     } else {
