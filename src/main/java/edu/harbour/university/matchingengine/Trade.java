@@ -1,4 +1,4 @@
-package org.example;
+package edu.harbour.university.matchingengine;
 
 public class Trade {
     String side;
