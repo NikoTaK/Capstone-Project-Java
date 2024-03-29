@@ -1,5 +1,6 @@
 package edu.harbour.university.matchingengine.input;
 
+import edu.harbour.university.matchingengine.Logger;
 import edu.harbour.university.matchingengine.Originator;
 import edu.harbour.university.matchingengine.Side;
 import edu.harbour.university.matchingengine.order.CancelOrder;
@@ -16,6 +17,7 @@ public class InputParser {
         List<Order> orderMessages = new ArrayList<>();
         for (String currentOrder : input) {
             String[] parts = currentOrder.split("\s+");
+            Logger.logTrade(currentOrder);
             if (parts[2].equals("cancel")) {
                 Originator originator = Originator.valueOf(parts[0]);
                 String id = parts[1];

@@ -5,26 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c40d9cf5-4f5a-447d-ab13-2215e29d6326" name="Changes" comment="ilya1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/MatchingEngine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/OrderProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/Originator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/Side.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/input/ConsoleInputReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/input/FileInputReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/input/InputParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/input/InputReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/order/CancelOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/order/CreateOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/order/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/order/OrderType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/order/Trade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logTradeFirm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/UnitTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Message.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/Position.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Trade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/Trade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/orders" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/orders" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/Logger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/OrderProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/OrderProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/input/InputParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/input/InputParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/orders" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/orders" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +58,7 @@
     "Application.Main (1).executor": "Run",
     "Application.Main.executor": "Run",
     "Application.edu.harbour.university.matchingengine.Main.executor": "Run",
+    "JUnit.UnitTests.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -118,9 +108,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UnitTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProjectPilot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.harbour.university.matchingengine.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.harbour.university.matchingengine" />
+      <option name="MAIN_CLASS_NAME" value="edu.harbour.university.matchingengine.UnitTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.edu.harbour.university.matchingengine.Main" />
+        <item itemvalue="JUnit.UnitTests" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (1)" />
       </list>
@@ -196,16 +202,10 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/MatchingEngine.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/OrderProcessor.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="22" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

@@ -18,6 +18,7 @@ public class Main {
             MatchingEngine matchingEngine = new MatchingEngine(inputReader, inputParser, orderProcessor);
             List<Trade> output = matchingEngine.run();
             for (Trade trade : output) {
+                Logger.logOutput(String.valueOf(trade));
                 System.out.println(trade);
             }
         }
