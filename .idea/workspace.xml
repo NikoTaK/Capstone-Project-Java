@@ -5,9 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c40d9cf5-4f5a-447d-ab13-2215e29d6326" name="Changes" comment="ilya1">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/MatchingEngine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/OrderProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/Originator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/Side.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/input/ConsoleInputReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/input/FileInputReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/input/InputParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/input/InputReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/order/CancelOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/order/CreateOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/order/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/order/OrderType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/order/Trade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/orders" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/orders" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Message.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Trade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/Trade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/orders" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/orders" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,18 +64,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main (1).executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/macbookpro/IdeaProjects/ProjectPilot/src/main/java/org/example/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main (1).executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.edu.harbour.university.matchingengine.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "/Users/macbookpro/IdeaProjects/ProjectPilot/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
-  <component name="RunManager" selected="Application.Main">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.edu.harbour.university.matchingengine.Main">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="ProjectPilot" />
@@ -79,8 +105,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="edu.harbour.university.matchingengine.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.harbour.university.matchingengine.Main" />
+      <module name="ProjectPilot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.harbour.university.matchingengine.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.edu.harbour.university.matchingengine.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (1)" />
       </list>
@@ -157,9 +197,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/MatchingEngine.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/OrderProcessor.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

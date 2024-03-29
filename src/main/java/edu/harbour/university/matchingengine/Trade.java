@@ -1,12 +1,12 @@
-package org.example;
+package edu.harbour.university.matchingengine;
 
 public class Trade {
-    String side;
+    Side side;
     int size;
     double price;
     String productId;
 
-    public Trade(String side, int size, double price, String productId) {
+    public Trade(Side side, int size, double price, String productId) {
         this.side = side;
         this.size = size;
         this.price = price;
