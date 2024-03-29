@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c40d9cf5-4f5a-447d-ab13-2215e29d6326" name="Changes" comment="ilya1">
-      <change afterPath="$PROJECT_DIR$/logTradeFirm.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/UnitTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/Logger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/OrderProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/OrderProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/input/InputParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/input/InputParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/UnitTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/UnitTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/orders" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/orders" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trades.log" beforeDir="false" afterPath="$PROJECT_DIR$/trades.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +69,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.edu.harbour.university.matchingengine.Main">
+  <component name="RunManager" selected="JUnit.UnitTests">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="ProjectPilot" />
@@ -125,8 +120,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.edu.harbour.university.matchingengine.Main" />
         <item itemvalue="JUnit.UnitTests" />
+        <item itemvalue="Application.edu.harbour.university.matchingengine.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (1)" />
       </list>
@@ -206,6 +201,11 @@
           <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
           <option name="timeStamp" value="22" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/edu/harbour/university/matchingengine/OrderProcessor.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
